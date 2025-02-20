@@ -1,0 +1,7 @@
+{
+  "name": "RN_Demo",
+  "displayName": "RN_Demo",
+  "plugins": [
+    "expo-font"
+  ]
+}
