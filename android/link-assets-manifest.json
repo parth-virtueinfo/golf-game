@@ -2,11 +2,11 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/MonumentExtended Regular.otf",
+      "path": "assets/fonts/MonumentExtended-Regular.otf",
       "sha1": "1e787896f58bb8ef3b6d5276f8c6d8da541150d9"
     },
     {
-      "path": "assets/fonts/MonumentExtended Ultrabold.otf",
+      "path": "assets/fonts/monumentextended-ultrabold.otf",
       "sha1": "c34583b8a5b48d6b5e2f657fecdacccf77993835"
     }
   ]

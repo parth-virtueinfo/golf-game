@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-RN_Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RN_Demo.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2845211C92C944AB8E453718 /* monumentextended-ultrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7E64A058F4F34DD981163720 /* monumentextended-ultrabold.otf */; };
 		62A6F8BD1CF5BFEA8CF3B9F9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		2E9F192386DC4A1896AACE7D /* MonumentExtended Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF2F0196A9534A49AE8E6BA7 /* MonumentExtended Regular.otf */; };
-		B19781CAE0E146E384AB92F7 /* MonumentExtended Ultrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E644812350E4494EB1F0B6B5 /* MonumentExtended Ultrabold.otf */; };
+		B8ADB2C6BEF44EF4B7D3F31F /* MonumentExtended-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CA2A61175C64D27B100F186 /* MonumentExtended-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +24,11 @@
 		3B4392A12AC88292D35C810B /* Pods-RN_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Demo.debug.xcconfig"; path = "Target Support Files/Pods-RN_Demo/Pods-RN_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-RN_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_Demo.release.xcconfig"; path = "Target Support Files/Pods-RN_Demo/Pods-RN_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RN_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA2A61175C64D27B100F186 /* MonumentExtended-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "MonumentExtended-Regular.otf"; path = "../assets/fonts/MonumentExtended-Regular.otf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = RN_Demo/AppDelegate.swift; sourceTree = "<group>"; };
+		7E64A058F4F34DD981163720 /* monumentextended-ultrabold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "monumentextended-ultrabold.otf"; path = "../assets/fonts/monumentextended-ultrabold.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RN_Demo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		BF2F0196A9534A49AE8E6BA7 /* MonumentExtended Regular.otf */ = {isa = PBXFileReference; name = "MonumentExtended Regular.otf"; path = "../assets/fonts/MonumentExtended Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E644812350E4494EB1F0B6B5 /* MonumentExtended Ultrabold.otf */ = {isa = PBXFileReference; name = "MonumentExtended Ultrabold.otf"; path = "../assets/fonts/MonumentExtended Ultrabold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +94,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AC5C9ABC63FB42B6B1A0A5E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CA2A61175C64D27B100F186 /* MonumentExtended-Regular.otf */,
+				7E64A058F4F34DD981163720 /* monumentextended-ultrabold.otf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,16 +112,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		AC5C9ABC63FB42B6B1A0A5E7 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				BF2F0196A9534A49AE8E6BA7 /* MonumentExtended Regular.otf */,
-				E644812350E4494EB1F0B6B5 /* MonumentExtended Ultrabold.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -176,8 +176,8 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				62A6F8BD1CF5BFEA8CF3B9F9 /* PrivacyInfo.xcprivacy in Resources */,
-				2E9F192386DC4A1896AACE7D /* MonumentExtended Regular.otf in Resources */,
-				B19781CAE0E146E384AB92F7 /* MonumentExtended Ultrabold.otf in Resources */,
+				B8ADB2C6BEF44EF4B7D3F31F /* MonumentExtended-Regular.otf in Resources */,
+				2845211C92C944AB8E453718 /* monumentextended-ultrabold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
