@@ -5,5 +5,7 @@ export const ScreenName = {
     GameLobbyScreen: 'GameLobbyScreen',
     CreatePasswordScreen: 'CreatePasswordScreen',
     EnterEmailScreen: 'EnterEmailScreen',
-    MainScreen: 'MainScreen'
+    MainScreen: 'MainScreen',
+    CreateFullName: 'CreateFullName',
+    CreateDateOfBirthScreen: 'CreateDateOfBirthScreen',
 };

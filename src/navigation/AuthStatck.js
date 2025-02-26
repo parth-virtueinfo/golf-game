@@ -6,6 +6,8 @@ import CreatePasswordScreen from '../screens/CreatePasswordScreen';
 import EnterEmailScreen from '../screens/EnterEmailScreen';
 import GameLobby from '../screens/GameLobbyScreen';
 import MainScreen from '../screens/MainScreen';
+import CreateFullName from '../screens/CreateAccountScreen/CreateFullName';
+import CreateDateOfBirthScreen from '../screens/CreateAccountScreen/CreateDateOfBirthScreen';
 
 const Stack = createStackNavigator();
 
@@ -17,6 +19,8 @@ const AuthStatck = () => {
       <Stack.Screen name={ScreenName.GameLobbyScreen} component={GameLobby} />
       <Stack.Screen name={ScreenName.CreatePasswordScreen} component={CreatePasswordScreen} />
       <Stack.Screen name={ScreenName.EnterEmailScreen} component={EnterEmailScreen} />
+      <Stack.Screen name={ScreenName.CreateFullName} component={CreateFullName} />
+      <Stack.Screen name={ScreenName.CreateDateOfBirthScreen} component={CreateDateOfBirthScreen} />
     </Stack.Navigator>
   );
 }
