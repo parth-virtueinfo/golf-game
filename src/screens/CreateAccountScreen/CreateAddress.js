@@ -7,58 +7,24 @@ import ProgressStepCreateAccount from '../../components/ProgressStepCreateAccoun
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import CustomTextMonument from '../../components/CustomTextMonument';
 import InfoCard from '../../components/InfoCard';
-import { Calender, Card } from '../../common/Svg';
+import { Card, LocationMarker, LocationMarkerWhite } from '../../common/Svg';
+import CustomTextInput from '../../components/CustomTextInput';
 import PrimaryButton from '../../components/PrimaryButton';
 import { ScreenName } from '../../common/ScreenName';
-import CustomPicker from '../../components/CustomPicker';
-import DateTimePickerModal from "react-native-modal-datetime-picker";
+import { moderateScale } from '../../components/scalling';
 
-
-const CreateDateOfBirthScreen = () => {
+const CreateAddress = () => {
   const navigation = useNavigation();
-  
-  const currentDate = new Date();
-  const [day, setDay] = useState(currentDate.getDate().toString().padStart(2, '0'));
-  const [month, setMonth] = useState((currentDate.getMonth() + 1).toString().padStart(2, '0'));
-  const [year, setYear] = useState(currentDate.getFullYear().toString());
-
-  const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
-  const [pickerType, setPickerType] = useState(null);
-
-  const showDatePicker = (type) => {
-    setPickerType(type);
-    setDatePickerVisibility(true);
-  };
-
-  const hideDatePicker = () => {
-    setDatePickerVisibility(false);
-  };
-
-  const handleConfirm = (date) => {
-    if (pickerType === 'day') {
-      setDay(date.getDate().toString().padStart(2, '0'));
-    } else if (pickerType === 'month') {
-      setMonth((date.getMonth() + 1).toString().padStart(2, '0'));
-    } else if (pickerType === 'year') {
-      setYear(date.getFullYear().toString());
-    }
-    hideDatePicker();
-  };
+  const [firstName, setFirstName] = useState('');
 
   return (
     <View style={styles.container}>
       <Image source={Images.ic_bg_account_1} style={styles.bgImage} />
       <AppHeader backgroundColor={'transparent'} />
-      <DateTimePickerModal
-        isVisible={isDatePickerVisible}
-        mode="date"
-        onConfirm={handleConfirm}
-        onCancel={hideDatePicker}
-      />
       <View style={styles.content}>
         <ProgressStepCreateAccount
-          width={'60%'} 
-          currentStep={3}
+          width={'80%'}
+          currentStep={4}
           onBackPress={() => navigation.goBack()}
         />
         <KeyboardAwareScrollView
@@ -66,7 +32,7 @@ const CreateDateOfBirthScreen = () => {
           showsVerticalScrollIndicator={false}
         >
           <CustomTextMonument style={styles.title}>
-            {string.enter_your_date_of_birth}
+            {string.enter_your_address}
           </CustomTextMonument>
           <InfoCard
             title={string.important}
@@ -74,38 +40,40 @@ const CreateDateOfBirthScreen = () => {
             icon={<Card />}
             containerStyle={styles.infoCard}
           />
-          <CustomPicker
-            title={string.day}
-            svg={<Calender />}
-            value={day}
-            onPress={() => showDatePicker('day')}
-          />
-          <CustomPicker
-            title={string.month}
-            svg={<Calender />}
-            value={month}
-            onPress={() => showDatePicker('month')}
-          />
-          <CustomPicker
-            title={string.year}
-            svg={<Calender />}
-            value={year}
-            onPress={() => showDatePicker('year')}
-          />
-          
+          <View style={styles.currentLocationContent}>
+            <PrimaryButton
+              title={string.confirm_current_location}
+              buttonBorderRadius={10}
+              buttonWidth={'70%'}
+              buttonMarginTop={0}
+              svg={<LocationMarkerWhite />}
+              textStyle={styles.currentLocationTxt}
+            ></PrimaryButton>
+            <View style={styles.displayLocation}>
+              <Text style={styles.locationLabel}>{string.location}</Text>
+              <Text numberOfLines={1} style={styles.locationLabel}>{'Texas'}</Text>
+            </View>
+          </View>
+          <CustomTextInput
+            title={string.address}
+            svg={<LocationMarker />}
+            placeholder={string.start_searching_here}
+            value={firstName}
+            changeText={setFirstName}
+          />  
           <View style={styles.buttonContainer}>
             <PrimaryButton
               title={string.next}
               onPress={() => {
-                navigation.navigate(ScreenName.CreateAddress);
+                navigation.navigate(ScreenName.CreatePassword);
               }}
             ></PrimaryButton>
           </View>
-        </KeyboardAwareScrollView> 
+        </KeyboardAwareScrollView>
       </View>
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   content: {
@@ -135,11 +103,26 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flex: 1,
-    justifyContent:'flex-end'
+    justifyContent: 'flex-end'
   },
   infoCard: {
     marginTop: 10
+  },
+  currentLocationContent: {
+    flexDirection: 'row',
+    alignItems:'center',
+    marginTop: moderateScale(20),
+    justifyContent:'space-between',
+  },
+  currentLocationTxt: {
+    fontSize: 14,
+  },
+  locationLabel: {
+    fontSize: 12,
+  },
+  displayLocation: {
+    flexDirection:'row'
   }
 });
 
-export default CreateDateOfBirthScreen;
+export default CreateAddress;

@@ -11,6 +11,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2845211C92C944AB8E453718 /* monumentextended-ultrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7E64A058F4F34DD981163720 /* monumentextended-ultrabold.otf */; };
 		62A6F8BD1CF5BFEA8CF3B9F9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		6FB1747122EC40A8B62EC3C4 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4CF7E01FBD74957914E3624 /* DMSans-Regular.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B8ADB2C6BEF44EF4B7D3F31F /* MonumentExtended-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6CA2A61175C64D27B100F186 /* MonumentExtended-Regular.otf */; };
@@ -29,6 +30,7 @@
 		7E64A058F4F34DD981163720 /* monumentextended-ultrabold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "monumentextended-ultrabold.otf"; path = "../assets/fonts/monumentextended-ultrabold.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RN_Demo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F4CF7E01FBD74957914E3624 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Regular.ttf"; path = "../assets/fonts/DMSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				6CA2A61175C64D27B100F186 /* MonumentExtended-Regular.otf */,
 				7E64A058F4F34DD981163720 /* monumentextended-ultrabold.otf */,
+				F4CF7E01FBD74957914E3624 /* DMSans-Regular.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -178,6 +181,7 @@
 				62A6F8BD1CF5BFEA8CF3B9F9 /* PrivacyInfo.xcprivacy in Resources */,
 				B8ADB2C6BEF44EF4B7D3F31F /* MonumentExtended-Regular.otf in Resources */,
 				2845211C92C944AB8E453718 /* monumentextended-ultrabold.otf in Resources */,
+				6FB1747122EC40A8B62EC3C4 /* DMSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

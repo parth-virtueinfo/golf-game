@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Pressable, Text } from "react-native";
+import { Image, Pressable, Text, View } from "react-native";
 import { horizontalScale, moderateScale, verticalScale } from "./scalling";
 import { colors } from "../common";
 import Icon from "./Icon";
@@ -25,6 +25,8 @@ const PrimaryButton = (props) => {
     iconColor = colors.white,
     iconSize = 20,
     textColor= colors.white,
+    svg,
+    svgContainerStyle
   } = props;
 
   return (
@@ -59,6 +61,12 @@ const PrimaryButton = (props) => {
       {showIcon && (
         <Icon type={iconType} name={iconName} color={iconColor} size={iconSize} />
       )}
+
+      {svg && 
+      <View style={[svgContainerStyle, { marginRight:5, marginLeft:-10 }]}>
+        {svg}
+      </View>
+      }
 
       <Text
         style={[

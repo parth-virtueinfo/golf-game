@@ -4,9 +4,10 @@ import { ScreenName } from "./src/common/ScreenName";
 import { NavigationContainer } from "@react-navigation/native";
 import { navigationRef } from "./src/navigation/NavigationService";
 import { createStackNavigator } from "@react-navigation/stack";
-import AuthStack from "./src/navigation/AuthStatck";
+import AuthStack from "./src/navigation/AuthStack";
 import { colors } from "./src/common";
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import BottomTabs from "./src/navigation/BottomTabs";
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ const App = () => {
         <NavigationContainer ref={navigationRef}>
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name={ScreenName.AuthStack} component={AuthStack} />
+            <Stack.Screen name={ScreenName.BottomTabs} component={BottomTabs} />
           </Stack.Navigator>
         </NavigationContainer>
       </View>

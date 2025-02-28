@@ -31,4 +31,17 @@ export const string = {
   "month":"MONTH",
   "day":"DAY",
   "year":"YEAR",
+  "enter_your_address": "ENTER YOUR\nADDRESS",
+  "address": "ADDRESS",
+  "start_searching_here": "Start searching here...",
+  "confirm_current_location": "Confirm current location",
+  "location": "Location: ",
+  "create_your_password": "CREATE YOUR PASSWORD",
+  "must_contain_at_least_1_uppercase_letter":"Must contain at least 1 uppercase letter, 1 number, 1 special character.",
+  "must_be_at_least_8_characters_long":"Must be at least 8 characters long.",
+  "terms_of_service": "Terms of service",
+  "privacy_policy": "\nPrivacy Policy",
+  "by_creating_an_account_you_agree_to_Swing_Stakes": "By creating an account, you (1) agree to\nSwing Stakes ",
+  "including_the_arbitration_provision_and": ",\nincluding the arbitration provision and",
+  "acknowledge_that_you_have_received": " (2) acknowledge that you\nhave received and reviewed those documents, and (3) confirm that you are\nof legal age to participate in Swing\nStakes contests."
 };
