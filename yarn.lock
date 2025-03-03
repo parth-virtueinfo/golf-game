@@ -7722,6 +7722,11 @@ react-native-modal-datetime-picker@^18.0.0:
   dependencies:
     prop-types "^15.7.2"
 
+react-native-otp-entry@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/react-native-otp-entry/-/react-native-otp-entry-1.8.3.tgz#64f26cf83d3b90f9f068b8ca05aaf4b8d56b8886"
+  integrity sha512-cpEXmbaBkMEeQNGeGL54T9RAtHWVggddNgpg9hLr9/5bCL2S/voO3J+60TPfsHk3cmI9+rMxTNH3jbNnhpmZZA==
+
 react-native-paper@^5.13.1:
   version "5.13.1"
   resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-5.13.1.tgz#50217012b2d008397296c9bfb755d603a373f48b"

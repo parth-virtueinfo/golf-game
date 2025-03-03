@@ -7,16 +7,17 @@ const InfoCard = ({
   title,
   description,
   icon,
-  containerStyle
+  containerStyle,
+  textColor
 }) => {
   return (
     <View style={[styles.container, containerStyle]}>
       {icon && icon}
       <View style={styles.content}>
-        <CustomTextMonument>
+        <CustomTextMonument color={textColor}>
           {title}
         </CustomTextMonument>
-        <Text>{description}</Text>
+        <Text style={{color: textColor}}>{description}</Text>
       </View>
     </View>
   );

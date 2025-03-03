@@ -63,5 +63,17 @@ export const string = {
   "confirm_deletion": "Confirm deletion",
   "swing_stakes": "SWING\nSTAKES",
   "match_compete_win": "MATCH. COMPETE. WIN.",
-  "loading": "Loading..."
+  "loading": "Loading...",
+  "upload_photo_id": "We need to verify your identity in order for you to\nplay Swing Stakes. tap “Continue” below to upload a\nphoto ID and being the verification process.",
+  "identity_verification_required": "IDENTITY\nVERIFICATION\nREQUIRED.",
+  "continue": "Continue",
+  "enter_the_last_4_digits_of_your_ssn":"Enter the last 4 digits of your SSN",
+  "f_y_i_your_ssn_is_encrypted_and_kept_100_safe_it_s_only_used_to_verify_your_identity":"FYI, your SSN is encrypted and kept 100% safe. It’s only used to verify your identity.",
+  "ssn_validation":"SSN\nVALIDATION.",
+  "confirm_identity": "Confirm Identity",
+  "verification_complete": "VERIFICATION COMPLETE.",
+  "finish": "Finish",
+  "retry": "Retry",
+  "thank_you_for_your_patience": "Thank you for your patience, you\nmay not make transactions on\nSwing Stakes.",
+  "successful": "SUCCESSFUL!",
 };

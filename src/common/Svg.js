@@ -23,6 +23,7 @@ import ActiveRounds from "../../assets/svgs/ActiveRounds.svg";
 import Close from "../../assets/svgs/Close.svg";
 import SwingStakes from "../../assets/svgs/SwingStakes.svg";
 import DollerSplash from "../../assets/svgs/DollerSplash.svg";
+import CardWhite from "../../assets/svgs/CardWhite.svg";
 
 export {
   Email,
@@ -50,4 +51,5 @@ export {
   Close,
   SwingStakes,
   DollerSplash,
+  CardWhite
 };

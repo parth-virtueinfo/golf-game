@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { colors } from '../../common';
+import { colors, string } from '../../common';
 import AppHeader from '../../components/AppHeader';
 import PrimaryButton from '../../components/PrimaryButton';
 import ChangePasswordDialog from '../../components/ChangePasswordDialog';
 import ChangeEmailDialog from '../../components/ChangeEmailDialog';
 import ChangeAddressDialog from '../../components/ChangeAddressDialog';
 import DeleteAccountDialog from '../../components/DeleteAccountDialog';
+import IdentityVerificationDialog from '../../components/IdentityVerificationDialog';
+import EnterSSNDigitDialog from '../../components/EnterSSNDigitDialog';
+import VerificationCompleteDialog from '../../components/VerificationCompleteDialog';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -18,6 +21,9 @@ const HomeScreen = () => {
   const [showChangeEmailDialog, setShowChangeEmailDialog] = useState(false);
   const [showChangeAddressDialog, setShowChangeAddressDialog] = useState(false);
   const [showDeleteAccountDialog, setShowDeleteAccountDialog] = useState(false);
+  const [showIdentityVerificationDialog, setShowIdentityVerificationDialog] = useState(false);
+  const [showEnterSSNDigitDialog, setShowEnterSSNDigitDialog] = useState(false);
+  const [showVerificationCompleteDialog, setShowVerificationCompleteDialog] = useState(false);
   const [checked, setChecked] = useState(false);
 
 
@@ -67,9 +73,33 @@ const HomeScreen = () => {
           setShowDeleteAccountDialog(false);
         }}
       ></DeleteAccountDialog>
-      <View style={{ flex:1 }}>
+      <IdentityVerificationDialog
+        showIdentityVerificationDialog={showIdentityVerificationDialog}
+        setShowIdentityVerificationDialog={setShowIdentityVerificationDialog}
+        onPressClose={() => {
+          setShowIdentityVerificationDialog(false);
+        }}
+      ></IdentityVerificationDialog>
+      <EnterSSNDigitDialog
+        showEnterSSNDigitDialog={showEnterSSNDigitDialog}
+        setShowEnterSSNDigitDialog={setShowEnterSSNDigitDialog}
+        onPressClose={() => {
+          setShowEnterSSNDigitDialog(false);
+        }}
+      ></EnterSSNDigitDialog>
+      <VerificationCompleteDialog
+        isRetry={false}
+        title={string.successful}
+        description={string.thank_you_for_your_patience}
+        showVerificationCompleteDialog={showVerificationCompleteDialog}
+        setShowVerificationCompleteDialog={setShowVerificationCompleteDialog}
+        onPressClose={() => {
+          setShowVerificationCompleteDialog(false);
+        }}
+      ></VerificationCompleteDialog>
+      <View style={{ flex: 1 }}>
         <PrimaryButton
-          onPress={() => setShowDeleteAccountDialog(true)}
+          onPress={() => setShowVerificationCompleteDialog(true)}
         ></PrimaryButton>
       </View>
     </View>

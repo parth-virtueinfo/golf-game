@@ -7,4 +7,5 @@ export const Images = {
   ic_bg_account_1: require("../assets/images/ic_bg_account_1.png"),
   ic_bg_change_pass: require("../assets/images/ic_bg_change_pass.png"),
   ic_bg_splash: require("../assets/images/ic_bg_splash.png"),
+  ic_bg_verification: require("../assets/images/ic_bg_verification.png"),
 };
