@@ -18,4 +18,5 @@ export const ScreenName = {
     MyProfileScreen: 'MyProfileScreen',
     RoundScreen: 'RoundScreen',
     SettingScreen: 'SettingScreen',
+    SplashScreen: 'SplashScreen',
 };

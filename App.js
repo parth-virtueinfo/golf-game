@@ -8,6 +8,7 @@ import AuthStack from "./src/navigation/AuthStack";
 import { colors } from "./src/common";
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import BottomTabs from "./src/navigation/BottomTabs";
+import SplashScreen from "./src/screens/SplashScreen/SplashScreen";
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ const App = () => {
       <View style={styles.authStack}>
         <NavigationContainer ref={navigationRef}>
           <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name={ScreenName.SplashScreen} component={SplashScreen} />
             <Stack.Screen name={ScreenName.AuthStack} component={AuthStack} />
             <Stack.Screen name={ScreenName.BottomTabs} component={BottomTabs} />
           </Stack.Navigator>

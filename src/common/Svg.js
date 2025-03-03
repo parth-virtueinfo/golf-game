@@ -20,6 +20,9 @@ import InActiveRounds from "../../assets/svgs/InActiveRounds.svg";
 import InActiveSetting from "../../assets/svgs/InActiveSetting.svg";
 import ActiveMyProfile from "../../assets/svgs/ActiveMyProfile.svg";
 import ActiveRounds from "../../assets/svgs/ActiveRounds.svg";
+import Close from "../../assets/svgs/Close.svg";
+import SwingStakes from "../../assets/svgs/SwingStakes.svg";
+import DollerSplash from "../../assets/svgs/DollerSplash.svg";
 
 export {
   Email,
@@ -44,4 +47,7 @@ export {
   InActiveSetting,
   ActiveMyProfile,
   ActiveRounds,
+  Close,
+  SwingStakes,
+  DollerSplash,
 };

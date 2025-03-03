@@ -69,7 +69,7 @@ const CustomTextInput = React.forwardRef((props, ref) => {
 
   return (
     <View>
-      <View style={[styles.container, { height, width, borderRadius, borderColor, borderWidth: isBorder ? borderWidth : 0 }]}>
+      <View style={[styles.container, { height, width, borderRadius, borderColor, borderWidth: isBorder ? borderWidth : 0, backgroundColor: !editable ? colors.darkGrey : colors.white }]}>
         <View style={styles.headerContainer}>
           {renderIcon()}
           <Text style={styles.title}>{title}</Text>
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     color: colors.blackPrimary,
     marginTop: moderateScale(20),
-    backgroundColor: colors.white,
+    // backgroundColor: colors.white,
   },
   headerContainer: {
     flexDirection: "row",
@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   disabledInput: {
-    backgroundColor: "#efefef",
+    backgroundColor: colors.darkGrey,
     borderColor: "#efefef",
   },
   iconImage: {
