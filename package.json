@@ -21,6 +21,7 @@
     "expo-app-loading": "^2.1.1",
     "expo-font": "~13.0.3",
     "expo-splash-screen": "~0.29.21",
+    "moment": "^2.30.1",
     "react": "18.3.1",
     "react-native": "0.77.0",
     "react-native-dev-menu": "^4.1.1",

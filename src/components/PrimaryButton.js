@@ -26,11 +26,13 @@ const PrimaryButton = (props) => {
     iconSize = 20,
     textColor= colors.white,
     svg,
-    svgContainerStyle
+    svgContainerStyle,
+    disabled = false
   } = props;
 
   return (
     <Pressable
+      disabled={disabled}
       style={[
         {
           width: buttonWidth,
